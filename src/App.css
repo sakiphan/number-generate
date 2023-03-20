@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: #F4BFBF;
+    color: black;
+    font-weight: bold;
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero .container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFD9C0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero .container .randomNumber {
+    background: #FAF0D7;
+    padding: 20px;
+    min-width: 100%;
+    border: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+
+p span {
+    color: red;
+    font-weight: bold;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero .numContainer {
+    display: flex;
+     justify-content: space-between;  /* Yatay ve eşit parçalara bölmeye yarar. */ 
+    padding: 30px 0;
+    min-width: 100%;
+
+}
+
+.hero .container div {
+    width: 100%;
+    max-width: 42%;
+}
+
+
+.hero .numContainer div input {
+    padding: 5px;
+    margin: 1px;
+
+
+    background: #FAF0D7;
+    color: red;
+    font-weight: bold;
+
+}
+
+.hero .container button {
+    align-items: flex-end;
+    border: none;
+    outline: none;
+    color: black;
+    background: #FAF0D7;
+    font-weight: bold;
+    padding: 14px;
+    width: 100%;
+    font-size: 22px;
+    cursor: pointer; /* El İmleci */
+    transition: .4s;
+}
+
+.hero .container button:hover {
+    background-color: black;
+    color: #FAF0D7;
 }
